@@ -1,5 +1,5 @@
 DEVLIST = [
-    "1891078417",   # LUCIF3R
+    "1880229377",   # STARLORD
     "2097320259",   # xABHISH3K
     "1329105215",   # ABHISHEKSINGH
 ]
@@ -23,4 +23,4 @@ HARMFUL = [
     "HEROKU_API_KEY",
 ]
 
-INVALID_UPLOAD = ["WAR-TBot.session-journal", "WAR-TBot.session", "insta/settings.json"]
+INVALID_UPLOAD = ["ALN-TBot.session-journal", "ALN-TBot.session", "insta/settings.json"]
