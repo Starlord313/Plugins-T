@@ -18,7 +18,7 @@ async def restart(event):
         app = Heroku.apps()[Config.HEROKU_APP_NAME]
         app.restart()
     else:
-        await eor(event, f"✅ **Restarted WarUserBot** \n**Type** `{hl}ping` **after 1 minute to check if I am working !**")
+        await eor(event, f"✅ **Restarted ALNUserBot** \n**Type** `{hl}ping` **after 1 minute to check if I am working !**")
         await event.client.disconnect()
 
 
@@ -35,13 +35,13 @@ async def re(hell):
 
 @hell_cmd(pattern="reload$")
 async def rel(event):
-    await eor(event, "**Reloaded WarBot!** \n\n__This might take a minute.__")
+    await eor(event, "**Reloaded ALNBot!** \n\n__This might take a minute.__")
     await reload_hellbot()
 
 
 @hell_cmd(pattern="shutdown$")
 async def down(event):
-    await eor(event, "**[ ⚠️ ]** \n**WarUserBot is now turned off. Manually turn it on to start again.**")
+    await eor(event, "**[ ⚠️ ]** \n**ALNUserBot is now turned off. Manually turn it on to start again.**")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -111,13 +111,13 @@ async def dell(event):
 
 
 CmdHelp("power").add_command(
-    "restart", None, "Restarts your Waruserbot. Redtarting Bot may result in better functioning of bot when its laggy"
+    "restart", None, "Restarts your ALNUserbot. Redtarting Bot may result in better functioning of bot when its laggy"
 ).add_command(
     "reload", None, "Reloads the bot DB and SQL variables without deleting any external plugins if installed."
 ).add_command(
-    "shutdown", None, "Turns off WarBot. Userbot will stop working unless you manually turn it on."
+    "shutdown", None, "Turns off ALNBot. Userbot will stop working unless you manually turn it on."
 ).add_command(
-    "svar", "<variable name> <variable value>", "Sets the variable to SQL variables without restarting the bot.", "svar ALIVE_PIC https://telegra.ph/file/d871194e87181a0c0e5f2.jpg"
+    "svar", "<variable name> <variable value>", "Sets the variable to SQL variables without restarting the bot.", "svar ALIVE_PIC https://telegra.ph/file/454f987bb945aac302b82.jpg"
 ).add_command(
     "gvar", "<variable name>", "Gets the info of mentioned variable from both SQL & OS.", "gvar ALIVE_PIC"
 ).add_command(
