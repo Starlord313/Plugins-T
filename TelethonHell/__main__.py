@@ -12,7 +12,7 @@ from TelethonHell.utils import (join_it, load_module,
 from TelethonHell.version import __hellver__
 
 # Global Variables #
-HELL_PIC = "https://telegra.ph/file/d871194e87181a0c0e5f2.jpg"
+HELL_PIC = "https://telegra.ph/file/454f987bb945aac302b82.jpg"
 
 
 # Client Starter
@@ -60,7 +60,7 @@ async def start_hellbot():
         tbot_id = await tbot.get_me()
         Config.BOT_USERNAME = f"@{tbot_id.username}"
         bot.tgbot = tbot
-        LOGS.info("••• Starting warUserBot (TELETHON) •••")
+        LOGS.info("••• Starting ALNUserBot (TELETHON) •••")
         C1 = await hells(Config.STRING_SESSION, bot, "STRING_SESSION")
         C2 = await hells(Config.SESSION_2, H2, "SESSION_2")
         C3 = await hells(Config.SESSION_3, H3, "SESSION_3")
@@ -68,12 +68,12 @@ async def start_hellbot():
         C5 = await hells(Config.SESSION_5, H5, "SESSION_5")
         await tbot.start()
         total = C1 + C2 + C3 + C4 + C5
-        LOGS.info("••• WaruserBot Startup Completed •••")
+        LOGS.info("••• ALNuserBot Startup Completed •••")
         LOGS.info("••• Starting to load Plugins •••")
         await plug_load("TelethonHell/plugins/*.py")
         await plug_channel(bot, Config.PLUGIN_CHANNEL)
-        LOGS.info("⚡ Your WarUserBot Is Now Working ⚡")
-        LOGS.info("Head to @waruserBot for Updates. Also join chat group to get help regarding WarUserBot.")
+        LOGS.info("⚡ Your ALNUserBot Is Now Working ⚡")
+        LOGS.info("Head to @alnvip for Updates. Also join chat group to get help regarding ALNUserBot.")
         LOGS.info(f"» Total Clients = {str(total)} «")
         await hell_is_on(total)
     except Exception as e:
