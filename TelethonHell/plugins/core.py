@@ -21,16 +21,16 @@ async def kk(event):
     _o = o.split("\n")
     o = "\n".join(_o)
     OUTPUT = f"""
-<h1>List of Plugins in WarUserBot:</h1>
+<h1>List of Plugins in ALNUserBot:</h1>
 
 <code>{o}</code>
 
 <b><i>HELP:</b></i> <i>If you want to know the commands for a plugin, do “ .plinfo <plugin name> ”
 
-<b><a href='https://t.me/waruserbot'>@waruserbotsupport</a></b>
+<b><a href='https://t.me/+V1nEl9LEffUyNzk9'>@alnvip</a></b>
 """
-    hell = await telegraph_paste("All available plugins in WarUserBOt", OUTPUT)
-    await eor(event, f"[All available plugins in Waruserbot]({hell})", link_preview=False)
+    hell = await telegraph_paste("All available plugins in ALNUserBOt", OUTPUT)
+    await eor(event, f"[All available plugins in ALNuserbot]({hell})", link_preview=False)
 
 
 @hell_cmd(pattern="send ([\s\S]*)")
@@ -40,7 +40,7 @@ async def send(event):
     message_id = event.reply_to_msg_id or event.message.id
     thumb = hell_logo
     input_str = event.pattern_match.group(1)
-    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[LEGENDARY AF WARUSRBOT]({chnl_link})** ⚡"
+    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[LEGENDARY AF ALNUSRBOT]({chnl_link})** ⚡"
     the_plugin_file = "./TelethonHell/plugins/{}.py".format(input_str.lower())
     if os.path.exists(the_plugin_file):
         await event.client.send_file(
@@ -104,7 +104,7 @@ async def install(event):
                             b = 1
                         await hell.edit(a)
                     return await hell.edit(
-                        f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {hell_mention}\n\n{string}\n\n        ⚡ **[LEGENDARY AF WARUSRBOT]({chnl_link})** ⚡",
+                        f"✅ **Installed module** :- `{shortname}` \n✨ BY :- {hell_mention}\n\n{string}\n\n        ⚡ **[LEGENDARY AF ALNUSRBOT]({chnl_link})** ⚡",
                         link_preview=False,
                     )
                 return await hell.edit(
@@ -170,7 +170,7 @@ CmdHelp("core").add_command(
 ).add_command(
     "cmds", None, "Gives out the list of modules in WarUserBot."
 ).add_command(
-    "repo", None, "Gives HellBot's Github repo link."
+    "repo", None, "Gives ALNBOT's Github repo link."
 ).add_command(
     "help", None, "Shows inline help menu."
 ).add_command(
