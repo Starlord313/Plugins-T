@@ -12,14 +12,14 @@ from . import *
 # -------------------------------------------------------------------------------
 
 ALIVE_TEMP = """
-<b><i>✨ᴡᴀʀᴜsᴇʀʙᴏᴛ ɪs ᴏɴʟɪɴᴇ✨</b></i>  
+<b><i>✨𝗔𝗟𝗡𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗜𝗦 𝗔𝗟𝗜𝗩𝗘✨</b></i>  
 <i><b> » ᴏᴡɴᴇʀ </i></b> :  <a href='tg://user?id={}'>{}</a> 
  <b>» ᴛᴇʟᴇᴛʜᴏɴ :</b> <i>{}</i>
- <b>» ᴡᴀʀᴜsᴇʀʙᴏᴛ :</b> <i>{}</i>
+ <b>» 𝗔𝗟𝗡𝗨𝗦𝗘𝗥𝗕𝗢𝗧 :</b> <i>{}</i>
  <b>» sᴜᴅᴏ :</b> <i>{}</i>
  <b>» ᴜᴘᴛɪᴍᴇ :</b> <i>{}</i>
  <b>» ᴘɪɴɢ :</b> <i>{}</i>
-<b><i>❤️‍🔥 <a href='https://t.me/waruserbot'>[ ᴡᴀʀᴜsᴇʀʙᴏᴛ ]</a> ❤️‍🔥</i></b>
+<b><i>❤️‍🔥 <a href='https://t.me/+V1nEl9LEffUyNzk9'>[ 𝗔𝗟𝗡𝗨𝗦𝗘𝗥𝗕𝗢𝗧 ]</a> ❤️‍🔥</i></b>
 """
 
 msg = """{}\n
@@ -50,7 +50,7 @@ async def up(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://telegra.ph/file/d871194e87181a0c0e5f2.jpg"
+        PIC = "https://telegra.ph/file/454f987bb945aac302b82.jpg"
     end = datetime.datetime.now()
     ling = (end - start).microseconds / 1000
     omk = ALIVE_TEMP.format(ForGo10God, alive_name, tel_ver, hell_ver, is_sudo, uptime, ling)
@@ -68,7 +68,7 @@ async def up(event):
 async def hell_a(event):
     ForGo10God, HELL_USER, hell_mention = await client_id(event)
     uptime = await get_time((time.time() - StartTime))
-    am = gvarstat("ALIVE_MSG") or "<b> WarUserBot is Online ««</b>"
+    am = gvarstat("ALIVE_MSG") or "<b> ALNUserBot is Online ««</b>"
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "alive")
         await hell[0].click(event.chat_id)
