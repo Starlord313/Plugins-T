@@ -32,7 +32,7 @@ async def _(event):
     animation_ttl = range(12)
     event = await eor(event, "`Deploying...`")
     animation_chars = [
-        "**Heroku Connecting To Latest [Github Build](xabhish3k/waruserBot)**",
+        "**Heroku Connecting To Latest [Github Build](starlord313/alnub)**",
         f"**Build started by user** {hell_mention}",
         f"**Deploy** `535a74f0` **by user** **{hell_mention}**",
         "**Restarting Heroku Server...**",
@@ -41,8 +41,8 @@ async def _(event):
         "**Process exited with** `status 143`",
         "**Starting process with command** `python3 -m stdborg`",
         "**State changed from starting to up**",
-        "__INFO:WarUserBot:Logged in as 557667062__",
-        "__INFO:WarUserBot:Successfully loaded all plugins__",
+        "__INFO:ALNUserBot:Logged in as 557667062__",
+        "__INFO:ALNUserBot:Successfully loaded all plugins__",
         "**Build Succeeded**",
     ]
     for i in animation_ttl:
