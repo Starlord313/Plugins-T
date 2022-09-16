@@ -9,7 +9,7 @@ from HellConfig import Config
 if Config.STRING_SESSION:
     session = StringSession(str(Config.STRING_SESSION))
 else:
-    session = "warbot"
+    session = "alnub"
 
 try:
     Hell = TelegramClient(
