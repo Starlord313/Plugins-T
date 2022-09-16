@@ -38,17 +38,17 @@ else:
     abuse_m = "Disabled"
 
 
-my_channel = Config.MY_CHANNEL or "waruserbot"
-my_group = Config.MY_GROUP or "waruserbotsupport"
+my_channel = Config.MY_CHANNEL or "alnvip"
+my_group = Config.MY_GROUP or "chatgroup"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
     my_group = my_group.replace("@", "")
 
-chnl_link = "https://t.me/waruserbot"
-hell_channel = f"[The Waruserbot]({chnl_link})"
-grp_link = "https://t.me/waruserBotsupport"
-hell_grp = f"[WarUserBotSupport Group]({grp_link})"
+chnl_link = "https://t.me/+V1nEl9LEffUyNzk9"
+hell_channel = f"[ALN VIP]({chnl_link})"
+grp_link = "https://t.me/+xn-tNWk1E6w3NTQ1"
+hell_grp = f"[ALN UB CHAT GROUP]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user
