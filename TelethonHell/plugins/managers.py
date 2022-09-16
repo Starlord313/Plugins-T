@@ -230,11 +230,11 @@ async def handler(event):
 
 
 CmdHelp("managers").add_command(
-    "ls_local", None, "Gives the list of downloaded medias in your warbot server."
+    "ls_local", None, "Gives the list of downloaded medias in your ALNbot server."
 ).add_command(
-    "ls_root", None, "Gives the list of all files in root directory of warbot repo."
+    "ls_root", None, "Gives the list of all files in root directory of ALNbot repo."
 ).add_command(
-    "ls_saved", None, "Gives the list of all files in Saved directory of your warbot server"
+    "ls_saved", None, "Gives the list of all files in Saved directory of your ALNbot server"
 ).add_command(
     "rnsaved", "from | to", "Renames the file in saved directory"
 ).add_command(
