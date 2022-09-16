@@ -52,8 +52,8 @@ async def kang(event):
     nick = f"@{user.username}" if user.username else HELL_USER
     name = user.username if user.username else ForGo10God
     custompack = gvarstat("STICKER_PACKNAME")
-    packname = f"WarUserBot_{name}_{Sticker.pack}"
-    packnick = f"{custompack}" if custompack else f"{nick}'s waruserbot Vol.{Sticker.pack}"
+    packname = f"ALNUserBot_{name}_{Sticker.pack}"
+    packnick = f"{custompack}" if custompack else f"{nick}'s ALNuserbot Vol.{Sticker.pack}"
     is_sta = False
     is_ani = False
     is_vid = False
@@ -133,8 +133,8 @@ async def kang(event):
                         Sticker.pack += 1
                     except ValueError:
                         Sticker.pack = 1
-                    packname = f"WarUserBot_{name}_{Sticker.pack}"
-                    packnick = f"{custompack}" if custompack else f"{nick}'s waruserbot Vol.{Sticker.pack}"
+                    packname = f"ALNUserBot_{name}_{Sticker.pack}"
+                    packnick = f"{custompack}" if custompack else f"{nick}'s ALNuserbot Vol.{Sticker.pack}"
                     await hell.edit(f"__**Switching pack due to insufficient space ...**__ \n__Pack:__ `{Sticker.pack}`")
                     await conv.send_message(packname)
                     resp = await conv.get_response()
@@ -267,7 +267,7 @@ async def _(event):
     if not reply:
         return await eod(hell, "`Reply to a stciker to kang that pack.`")
     if len(lists) == 1:
-        pname = f"{un}'s WarUserBot Pack"
+        pname = f"{un}'s ALNUserBot Pack"
     else:
         pname = lists[1].strip()
     if reply and reply.media and reply.media.document.mime_type == "image/webp":
@@ -436,7 +436,7 @@ async def sticklet(event):
     draw = ImageDraw.Draw(image)
     fontsize = 230
 
-    FONT_FILE = await get_font_file(event.client, "@WarFonts")
+    FONT_FILE = await get_font_file(event.client, "@ALNFonts")
 
     font = ImageFont.truetype(FONT_FILE, size=fontsize)
 
@@ -450,7 +450,7 @@ async def sticklet(event):
     )
 
     image_stream = io.BytesIO()
-    image_stream.name = "Warbot.webp"
+    image_stream.name = "ALNbot.webp"
     image.save(image_stream, "WebP")
     image_stream.seek(0)
 
