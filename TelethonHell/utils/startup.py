@@ -11,11 +11,11 @@ from TelethonHell.version import __telever__
 
 # Creates the logger group on first deploy and adds the helper bot
 async def logger_id(client):
-    desc = "A Bot Logger Group For WARUSERBOT. DO NOT LEAVE THIS GROUP!!"
+    desc = "A Bot Logger Group For ALNUSERBOT. DO NOT LEAVE THIS GROUP!!"
     try:
         grp = await client(
             functions.channels.CreateChannelRequest(
-                title="Waruserbot Logger", about=desc, megagroup=True
+                title="ALNUserBot Logger", about=desc, megagroup=True
             )
         )
         grp_id = grp.chats[0].id
@@ -84,14 +84,14 @@ async def start_msg(client, pic, version, total):
 <b><i>Sudo :</b></i> <code>{is_sudo}</code>
 <b><i>Library :</b></i> <code>Telethon - {__telever__}</code>
 
-<b><i>»» <u><a href='https://t.me/waruserbot'>The WarUserBot</a></u> ««</i></b>
+<b><i>»» <u><a href='https://t.me/ALNuserbot'>The ALNUserBot</a></u> ««</i></b>
 """
     await client.send_file(
         Config.LOGGER_ID,
         pic,
         caption=text,
         parse_mode="HTML",
-        buttons=[[Button.url("WarBot Network", "https://t.me/wrrlegend")]],
+        buttons=[[Button.url("ALNBot Network", "https://t.me/+V1nEl9LEffUyNzk9")]],
     )
 
 
@@ -99,7 +99,7 @@ async def start_msg(client, pic, version, total):
 async def join_it(client):
     if client:
         try:
-            await client(functions.channels.JoinChannelRequest("@waruserbot"))
+            await client(functions.channels.JoinChannelRequest("@alnvip"))
             await client(functions.messages.ImportChatInviteRequest("6nBWPUON43AwYTk1"))
         except BaseException:
             pass
