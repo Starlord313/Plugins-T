@@ -84,7 +84,7 @@ async def update(event, repo, ups_rem, ac_br):
     await update_requirements()
     await eor(
         event,
-        "✅ Successfully updated waruserbot!\n\nBot is restarting please wait for a minute.",
+        "✅ Successfully updated ALNuserbot!\n\nBot is restarting please wait for a minute.",
     )
     args = [sys.executable, "-m", "Warbot"]
     os.execle(sys.executable, *args, os.environ)
@@ -137,16 +137,16 @@ async def upstream(event):
     _, _, hell_mention = await client_id(event)
     if changelog == "" and not force_update:
         _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
-        output_ = f"**◈ Your Bot Version:** `{hell_ver}` \n**◈ Owner:** {hell_mention} \n\n**◈ WaruserBot Global Version:** `{_version}` \n**◈ Release Date:** `{_release}` \n**◈ Official Repo Branch:** `{_branch}` \n**◈ Update By:** [{_author}]({_auturl})"
+        output_ = f"**◈ Your Bot Version:** `{hell_ver}` \n**◈ Owner:** {hell_mention} \n\n**◈ ALNuserBot Global Version:** `{_version}` \n**◈ Release Date:** `{_release}` \n**◈ Official Repo Branch:** `{_branch}` \n**◈ Update By:** [{_author}]({_auturl})"
         if str(_version) != str(hell_ver):
-            output_ += f"\n\n__Do__ `{hl}update build` __to update your WaruserBot to latest version.__"
+            output_ += f"\n\n__Do__ `{hl}update build` __to update your ALNuserBot to latest version.__"
         else:
             output_ += "\n\n__You are already on latest version.__"
         await hell.edit(output_)
         return repo.__del__()
     if not conf and not force_update:
         await print_changelogs(event, ac_br, changelog)
-        return await hell.edit(f"🌚 Do `{hl}update build` to update your **WARUSERBOT** !!")
+        return await hell.edit(f"🌚 Do `{hl}update build` to update your **ALNUSERBOT** !!")
 
     if force_update:
         await hell.edit(f"**⥼ Synced Repo ⥽** \n\n__Do__ `{hl}update` __again to start updating ...__")
@@ -174,7 +174,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             return repo.__del__()
         _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
         await event.edit(
-            f"<b><i>WARUSERBOT Docker Build In Progress !!!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>",
+            f"<b><i>ALNUSERBOT Docker Build In Progress !!!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>",
             link_preview=False,
             parse_mode="HTML",
         )
@@ -196,7 +196,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         build_status = app.builds(order_by="created_at", sort="desc")[0]
         if build_status.status == "failed":
            return await eod(event, "__Build Failed !!__")
-        await event.edit(f"**Your WarUserBot Is UpToDate**\n\n**Version :**  __{hell_ver}__\n**Oɯɳҽɾ :**  {hell_mention}")
+        await event.edit(f"**Your ALNUserBot Is UpToDate**\n\n**Version :**  __{hell_ver}__\n**Oɯɳҽɾ :**  {hell_mention}")
     else:
         await parse_error(event, "`HEROKU_API_KEY` __is not configured.__")
     return
@@ -237,7 +237,7 @@ async def upstream(event):
     ups_rem.fetch(ac_br)
     _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
     await event.edit(
-        f"<b><i>WARUSERBOT Docker Build In Progress !!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>",
+        f"<b><i>ALNUSERBOT Docker Build In Progress !!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>",
         link_preview=False,
         parse_mode="HTML",
     )
@@ -247,11 +247,11 @@ async def upstream(event):
 CmdHelp("updater").add_command(
     "update", None, "Checks if any new update is available."
 ).add_command(
-    "update now", None, "Soft-Update Your WarUserBot. Basically if you restart dyno it will go back to previous deploy."
+    "update now", None, "Soft-Update Your ALNUserBot. Basically if you restart dyno it will go back to previous deploy."
 ).add_command(
-    "update build", None, "Hard-Update Your WarUserBot. This won't take you back to your previous deploy. This will be triggered even if there is no changelog."
+    "update build", None, "Hard-Update Your ALNUserBot. This won't take you back to your previous deploy. This will be triggered even if there is no changelog."
 ).add_info(
-    "WARUSERBOT Updater."
+    "ALNUSERBOT Updater."
 ).add_warning(
     "✅ Harmless Module."
 ).add()
