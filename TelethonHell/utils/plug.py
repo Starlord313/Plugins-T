@@ -75,7 +75,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["TelethonHell.plugins." + shortname] = mod
-        LOGS.info("⚡ WarUserBot ⚡ - Successfully Imported " + shortname)
+        LOGS.info("⚡ ALNUserBot ⚡ - Successfully Imported " + shortname)
 
 
 # remove plugins
@@ -99,8 +99,8 @@ def remove_plugin(shortname):
 
 async def plug_channel(client, channel):
     if channel:
-        LOGS.info("⚡ WarUserBot ⚡ - PLUGIN CHANNEL DETECTED.")
-        LOGS.info("⚡ WarUserBot ⚡ - Starting to load extra plugins.")
+        LOGS.info("⚡ ALNUserBot ⚡ - PLUGIN CHANNEL DETECTED.")
+        LOGS.info("⚡ ALNUserBot ⚡ - Starting to load extra plugins.")
         plugs = await client.get_messages(channel, None, filter=InputMessagesFilterDocument)
         total = int(plugs.total)
         for plugins in range(total):
