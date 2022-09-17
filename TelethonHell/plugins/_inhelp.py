@@ -29,7 +29,7 @@ LOG_GP = Config.LOGGER_ID
 alive_txt = """{}\n
 <b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
-<b>Waruserbot ≈</b>  <i>{}</i>
+<b>ALNuserbot ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>
 <b>Abuse ≈</b>  <i>{}</i>
 <b>Sudo ≈</b>  <i>{}</i>
@@ -202,7 +202,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     file=PIC,
                     text=HELL_FIRST,
-                    title="ALMbot PM Permit",
+                    title="ALNbot PM Permit",
                     buttons=[
                         [custom.Button.inline("📝 Request Approval", data="req")],
                         [custom.Button.inline("🚫 Block", data="heheboi")],
@@ -228,17 +228,17 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 text=f"**⚡ LEGENDRY AF ALNUSERBOT ⚡**",
                 buttons=[
                     [Button.url("📑 Repo 📑", "https://github.com/Starlord313/ALNUB")],
-                    [Button.url("ALNBot Network", "https://t.me/+V1nEl9LEffUyNzk9")],
+                    [Button.url("ALNBot Network", "https://t.me/alnvip")],
                 ],
             )
 
         else:
             result = builder.article(
                 "@Waruserbot",
-                text="""**Hey! This is [ALNUSERBOT](https://t.me/+V1nEl9LEffUyNzk9) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [ALNUSERBOT](https://t.me/alnvip) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/+V1nEl9LEffUyNzk9"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/alnvip"),
                         custom.Button.url("⚡ GROUP ⚡", "https://t.me/+xn-tNWk1E6w3NTQ1"),
                     ],
                     [
@@ -246,7 +246,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                             "✨ REPO ✨",  "https://github.com/Starlord313/ALNUB"
                         ),
                         custom.Button.url(
-                            "🔰 TUTORIAL 🔰", "https://t.me/+xn-tNWk1E6w3NTQ1"
+                            "🔰 TUTORIAL 🔰", "https://t.me/alnchatgrp"
                         ),
                     ],
                 ],
