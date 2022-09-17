@@ -360,7 +360,7 @@ async def get_anilist(qdb, page):
         return [f"No results Found"]
     data = result["data"]["Page"]["media"][0]
     # pylint: disable=possibly-unused-variable
-    chnl = "[THE WARUSERBOT](https://t.me/WARUSERBOT)"
+    chnl = "[THE ALNUSERBOT](https://t.me/ALNVIP)"
     idm = data.get("id")
     idmal = data.get("idMal")
     romaji = data["title"]["romaji"]
@@ -433,7 +433,7 @@ async def get_anilist(qdb, page):
     banner_ = requests.get(banner)
     open(f"{idm}.jpg", "wb").write(banner_.content)
     title_img = f"{idm}.jpg"
-    logo = "https://telegra.ph/file/d871194e87181a0c0e5f2.jpg"
+    logo = "https://telegra.ph/file/454f987bb945aac302b82.jpg"
     descr = ""
     descr += f"<img src='{banner}'/> \n"
     descr += data["description"]
@@ -480,7 +480,7 @@ async def get_manga(qdb, page):
         name = f"""« {c_flag} » **{romaji}**
         {native}"""
     banner = f"https://img.anili.st/media/{idm}"
-    logo = "https://telegra.ph/file/d871194e87181a0c0e5f2.jpg"
+    logo = "https://telegra.ph/file/454f987bb945aac302b82.jpg"
     descr = ""
     descr += f"<img src='{banner}'/> \n"
     descr += synopsis
@@ -495,7 +495,7 @@ async def get_manga(qdb, page):
     finals_ += f"**✘ FORMAT :** `{format_}`\n"
     finals_ += f"**✘ SOURCE :** `{source}`\n"
     finals_ += f"**✘ DESCRIPTION :** [Synopsis]({paste})\n\n"
-    finals_ += f"\n       **<\>** [THE WARUSERBOT](https://t.me/WARUSERBOT)"
+    finals_ += f"\n       **<\>** [THE ALNUSERBOT](https://t.me/ALNVIP)"
     banner_ = requests.get(banner)
     open(f"{idm}.jpg", "wb").write(banner_.content)
     pic = f"{idm}.jpg"
@@ -520,7 +520,7 @@ async def get_character(query, page):
     img = data["image"]["large"]
     site_url = data["siteUrl"]
     desc = data["description"]
-    logo = "https://telegra.ph/file/d871194e87181a0c0e5f2.jpg"
+    logo = "https://telegra.ph/file/454f987bb945aac302b82.jpg"
     descr = ""
     descr += f"<img src='{img}'/> \n"
     descr += desc
@@ -534,7 +534,7 @@ async def get_character(query, page):
 **✘ DETAILS :** [More Info...]({paste})
 
 
-        **<\>** [THE WARUSERBOT](https://WARUSERBOT)
+        **<\>** [THE ALNUSERBOT](https://ALNVIP)
 """
     total = result["data"]["Page"]["pageInfo"]["total"]
     return img, [cap_text, total], [id_]
