@@ -17,7 +17,7 @@ def errors_handler(func):
 
             text = "**ALNUserBot CRASH REPORT**\n\n"
 
-            link = "[here](https://t.me/starlordopbot)"
+            link = "[here](https://t.me/me_chhota_wala)"
             text += "If you wanna you can report it"
             text += f"- just forward this message {link}.\n"
             text += "Nothing is logged except the fact of error and date\n"
