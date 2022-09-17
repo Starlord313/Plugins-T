@@ -23,9 +23,9 @@ ALIVE_TEMP = """
 """
 
 msg = """{}\n
-<b><i> ❤️‍🔥 ʙᴏᴛ sᴛᴀᴛᴜs ❤️‍🔥  </b></i>
+<b><i> ❤️‍🔥 𝗔𝗟𝗡𝗨𝗦𝗘𝗥𝗕𝗢𝗧 𝗜𝗦 𝗢𝗡𝗟𝗜𝗡𝗘 ❤️‍🔥  </b></i>
 <b> ᴛᴇʟᴇᴛʜᴏɴ :</b>  <i>{}</i>
-<b> ᴡᴀʀᴜsᴇʀʙᴏᴛ :</b>  <i>{}</i>
+<b> 𝗔𝗟𝗡𝗨𝗦𝗘𝗥𝗕𝗢𝗧 :</b>  <i>{}</i>
 <b> ᴜᴘᴛɪᴍᴇ :</b>  <i>{}</i>
 <b> ᴀʙᴜsᴇ :</b>  <i>{}</i>
 <b> sᴜᴅᴏ :</b>  <i>{}</i>
@@ -64,7 +64,7 @@ async def up(event):
     await hell.delete()
 
 
-@hell_cmd(pattern="war$")
+@hell_cmd(pattern="aln$")
 async def hell_a(event):
     ForGo10God, HELL_USER, hell_mention = await client_id(event)
     uptime = await get_time((time.time() - StartTime))
