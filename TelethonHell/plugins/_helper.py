@@ -8,7 +8,7 @@ from . import *
 msg = f"""
 **⚡LEGENDRY AF ALNUSERBOT⚡**
   •        [📑 Repo 📑](https://github.com/Starlord313/ALNUB)
-  •        [ALNBot Network](https://t.me/+V1nEl9LEffUyNzk9)
+  •        [ALNBot Network](https://t.me/alnvip)
   •  ©️ {hell_channel} ™
 """
 botname = Config.BOT_USERNAME
