@@ -59,4 +59,4 @@ async def client_id(event, botid=None):
         starlord = uid
         HELL_USER = client.first_name
         hell_mention = f"[{HELL_USER}](tg://user?id={me_chhota_wala})"
-    return starlord, HELL_USER, hell_mention
+    return Me_chhota_wala, HELL_USER, hell_mention
