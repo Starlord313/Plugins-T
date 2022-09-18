@@ -78,23 +78,41 @@ def button(page, modules):
 if Config.BOT_USERNAME is not None and tgbot is not None:
 
     @tgbot.on(InlineQuery)
+
     async def inline_handler(event):
+
         cids = await client_id(event, event.query.user_id)
+
         ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
+
         builder = event.builder
+
         result = None
+
         query = event.text
+
         auth = await clients_list()
+
         if event.query.user_id in auth and query == "hellbot_help":
+
             rev_text = query[::-1]
+
             veriler = button(0, sorted(CMD_HELP))
+
             apn = []
+
             for x in CMD_LIST.values():
+
                 for y in x:
+
                     apn.append(y)
+
             a = gvarstat("HELP_PIC")
+
             if a:
+
                 help_pic = a.split(" ")[0]
+
             else:
                 help_pic = "https://telegra.ph/file/454f987bb945aac302b82.jpg"
             help_msg = f"🔰 **{hell_mention}**\n\n📜 __No.of Plugins__ : `{len(CMD_HELP)}` \n🗂️ __Commands__ : `{len(apn)}`\n🗒️ __Page__ : 1/{veriler[0]}"
