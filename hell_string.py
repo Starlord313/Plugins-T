@@ -42,7 +42,7 @@ def generate_pyro_session():
         print("\nYour WarBot Session Is sent in your Telegram Saved Messages.")
         hellbot.send_message(
             "me",
-            f"#WARBOT_MUSIC #WARBOT_SESSION #PYROGRAM\n\n`{hellbot.export_session_string()}`",
+            f"#ALNBOT_MUSIC #ALNBOT_SESSION #PYROGRAM\n\n`{hellbot.export_session_string()}`",
         )
 
 
