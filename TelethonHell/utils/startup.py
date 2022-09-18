@@ -100,7 +100,7 @@ async def join_it(client):
     if client:
         try:
             await client(functions.channels.JoinChannelRequest("@alnvip"))
-            await client(functions.messages.ImportChatInviteRequest("6nBWPUON43AwYTk1"))
+            await client(functions.messages.ImportChatInviteRequest("-1001710338202"))
         except BaseException:
             pass
 
